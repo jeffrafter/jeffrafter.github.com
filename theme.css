@@ -12,13 +12,15 @@ h1 a {
   text-decoration: none;
   color: black;
 }
-h1, h1 a {
+h1 {
   letter-spacing: -1px;
   font-size: 7em;
   font-family: BebasNeueRegular, helvetica neue, helvetica, sans-serif;
   font-weight: 600;
   line-height: 0.2em;
   text-decoration: none;
+  margin-bottom: 0.4em;
+  color:black;
 }
 h2, h3, h4, h5 {
   font-family: TheanoDidotRegular, palatino, palatino linotype, georgia, serif;
@@ -30,7 +32,7 @@ h2, h3, h4, h5 {
 p {
   font-family: courier new, courier, monospace;
 }
-p.col {
+p {
   -moz-column-count:3; /* Firefox */
   -webkit-column-count:3; /* Safari and Chrome */
   column-count:3;
@@ -48,7 +50,14 @@ img {
   vertical-align:middle;
   padding: 0.20em;
 }
-
+#color {
+  background:white url(http://subtlepatterns.com/patterns/argyle.png);
+  background:white url(http://subtlepatterns.com/patterns/subtle_zebra_3d.png);
+  position:absolute;
+  height:297px;
+  width:100%;
+  z-index:-1;
+}
 #wrapper {
   width: 960px;
   margin: 0 auto;
@@ -59,6 +68,11 @@ img {
   color: #444;
   background: #ccc;
   padding: 1em;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+  -moz-opacity: 0.5;
+  -khtml-opacity: 0.5;
+  opacity: 0.5;
 }
 #nav {
   padding: 1em;
