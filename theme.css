@@ -6,7 +6,7 @@ body{
   margin: 0;
   padding: 0;
 }
-h1 {
+h1, h1 a {
   letter-spacing: -1px;
   font-size: 7em;
   font-family: BebasNeueRegular, helvetica neue, helvetica, sans-serif;
